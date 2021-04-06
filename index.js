@@ -16,7 +16,7 @@ stream.on('tweet', function (tweet, err) {
     if(tweet.user.id.toString() === elon_musk_twitter_id){ //check if elon tweeted 
         console.log(tweet.user.id)
         if(tweet.text.toLowerCase().includes(word)){
-            console.log(tweet)
+            console.log(tweet.text)
         }
     }
 })
